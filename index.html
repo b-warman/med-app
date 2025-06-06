@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-700 min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-gray-100 p-6 text-center border-b-2">
+        <h1 class="text-2xl text-gray-700 pt-6">Home</h1>
+        <div
+            class="p-1 w-11 h-11 bg-gray-200 rounded border-2 border-gray-400 text-gray-700 shadow-md absolute right-8 top-10">
+            <!-- Burger Menu Icon -->
+            <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                    d="M2 4.75A.75.75 0 0 1 2.75 4h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 4.75ZM2 10a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 10Zm0 5.25a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z"
+                    fill-rule="evenodd"></path>
+            </svg>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="p-6 space-y-5 flex-grow">
+        <section class="bg-gray-100 rounded p-4 text-center flex flex-col gap-y-3">
+            <h5 class="text-md">Upcoming Reminder</h5>
+            <h1 class="text-7xl">11:00</h1>
+            <h5 class="text-md">2x Paracetamol - 500mg</h5>
+        </section>
+
+        <section class="grid gap-6 grid-cols-2 px-3">
+
+            <div
+                class="w-full py-5 bg-gray-200 rounded border-2 border-gray-400 text-gray-700 shadow-md flex flex-col items-center justify-center text-center">
+                <!-- Heart Icon -->
+                <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 mb-4">
+                    <path
+                        d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z">
+                    </path>
+                </svg>
+                <p class="text-lg">Medicine</p>
+            </div>
+
+            <div
+                class="w-full py-5 bg-gray-200 rounded border-2 border-gray-400 text-gray-700 shadow-md flex flex-col items-center justify-center text-center">
+                <!-- Bell Icon -->
+                <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 mb-4">
+                    <path clip-rule="evenodd"
+                        d="M10 2a6 6 0 0 0-6 6c0 1.887-.454 3.665-1.257 5.234a.75.75 0 0 0 .515 1.076 32.91 32.91 0 0 0 3.256.508 3.5 3.5 0 0 0 6.972 0 32.903 32.903 0 0 0 3.256-.508.75.75 0 0 0 .515-1.076A11.448 11.448 0 0 1 16 8a6 6 0 0 0-6-6ZM8.05 14.943a33.54 33.54 0 0 0 3.9 0 2 2 0 0 1-3.9 0Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+                <p class="text-lg">Reminders</p>
+            </div>
+
+            <div
+                class="w-full py-5 bg-gray-200 rounded border-2 border-gray-400 text-gray-700 shadow-md flex flex-col items-center justify-center text-center">
+                <!-- Clock Icon -->
+                <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 mb-4">
+                    <path clip-rule="evenodd"
+                        d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm.75-13a.75.75 0 0 0-1.5 0v5c0 .414.336.75.75.75h4a.75.75 0 0 0 0-1.5h-3.25V5Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+                <p class="text-lg">History</p>
+            </div>
+
+            <div
+                class="w-full py-5 bg-gray-200 rounded border-2 border-gray-400 text-gray-700 shadow-md flex flex-col items-center justify-center text-center">
+                <!-- Clock Icon -->
+                <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 mb-4">
+                    <path clip-rule="evenodd"
+                        d="M9.664 1.319a.75.75 0 0 1 .672 0 41.059 41.059 0 0 1 8.198 5.424.75.75 0 0 1-.254 1.285 31.372 31.372 0 0 0-7.86 3.83.75.75 0 0 1-.84 0 31.508 31.508 0 0 0-2.08-1.287V9.394c0-.244.116-.463.302-.592a35.504 35.504 0 0 1 3.305-2.033.75.75 0 0 0-.714-1.319 37 37 0 0 0-3.446 2.12A2.216 2.216 0 0 0 6 9.393v.38a31.293 31.293 0 0 0-4.28-1.746.75.75 0 0 1-.254-1.285 41.059 41.059 0 0 1 8.198-5.424ZM6 11.459a29.848 29.848 0 0 0-2.455-1.158 41.029 41.029 0 0 0-.39 3.114.75.75 0 0 0 .419.74c.528.256 1.046.53 1.554.82-.21.324-.455.63-.739.914a.75.75 0 1 0 1.06 1.06c.37-.369.69-.77.96-1.193a26.61 26.61 0 0 1 3.095 2.348.75.75 0 0 0 .992 0 26.547 26.547 0 0 1 5.93-3.95.75.75 0 0 0 .42-.739 41.053 41.053 0 0 0-.39-3.114 29.925 29.925 0 0 0-5.199 2.801 2.25 2.25 0 0 1-2.514 0c-.41-.275-.826-.541-1.25-.797a6.985 6.985 0 0 1-1.084 3.45 26.503 26.503 0 0 0-1.281-.78A5.487 5.487 0 0 0 6 12v-.54Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+                <p class="text-lg">Index</p>
+            </div>
+
+            <div
+                class="w-full py-3 bg-gray-200 rounded border-2 border-gray-400 text-gray-700 shadow-md flex flex-col items-center justify-center text-center">
+                <!-- Accounts Icon -->
+                <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg" class="w-10 h-10">
+                    <path
+                        d="M7 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM14.5 9a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM1.615 16.428a1.224 1.224 0 0 1-.569-1.175 6.002 6.002 0 0 1 11.908 0c.058.467-.172.92-.57 1.174A9.953 9.953 0 0 1 7 18a9.953 9.953 0 0 1-5.385-1.572ZM14.5 16h-.106c.07-.297.088-.611.048-.933a7.47 7.47 0 0 0-1.588-3.755 4.502 4.502 0 0 1 5.874 2.636.818.818 0 0 1-.36.98A7.465 7.465 0 0 1 14.5 16Z">
+                    </path>
+                </svg>
+            </div>
+
+            <div
+                class="w-full py-3 bg-gray-200 rounded border-2 border-gray-400 text-gray-700 shadow-md flex flex-col items-center justify-center text-center">
+                <!-- Clock Icon -->
+                <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg" class="w-10 h-10">
+                    <path clip-rule="evenodd"
+                        d="M7.84 1.804A1 1 0 0 1 8.82 1h2.36a1 1 0 0 1 .98.804l.331 1.652a6.993 6.993 0 0 1 1.929 1.115l1.598-.54a1 1 0 0 1 1.186.447l1.18 2.044a1 1 0 0 1-.205 1.251l-1.267 1.113a7.047 7.047 0 0 1 0 2.228l1.267 1.113a1 1 0 0 1 .206 1.25l-1.18 2.045a1 1 0 0 1-1.187.447l-1.598-.54a6.993 6.993 0 0 1-1.929 1.115l-.33 1.652a1 1 0 0 1-.98.804H8.82a1 1 0 0 1-.98-.804l-.331-1.652a6.993 6.993 0 0 1-1.929-1.115l-1.598.54a1 1 0 0 1-1.186-.447l-1.18-2.044a1 1 0 0 1 .205-1.251l1.267-1.114a7.05 7.05 0 0 1 0-2.227L1.821 7.773a1 1 0 0 1-.206-1.25l1.18-2.045a1 1 0 0 1 1.187-.447l1.598.54A6.992 6.992 0 0 1 7.51 3.456l.33-1.652ZM10 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+            </div>
+
+
+
+        </section>
+
+    </main>
+
+    <!-- Sticky Footer -->
+    <footer class="bg-gray-100 text-center p-6 border-t-2">
+
+        <div class="flex justify-center gap-10">
+            <a href="medicine.html">
+                <div class="p-3 w-16 h-16 bg-gray-200 rounded border-2 border-gray-400 text-gray-700 shadow-md">
+                    <!-- Heart Icon -->
+                    <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="m9.653 16.915-.005-.003-.019-.01a20.759 20.759 0 0 1-1.162-.682 22.045 22.045 0 0 1-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 0 1 8-2.828A4.5 4.5 0 0 1 18 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 0 1-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 0 1-.69.001l-.002-.001Z">
+                        </path>
+                    </svg>
+                </div>
+            </a>
+            <div class="p-3 w-16 h-16 bg-white rounded border-2 border-gray-700 text-gray-700 shadow-md">
+                <!-- Home Icon -->
+                <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path clip-rule="evenodd"
+                        d="M9.293 2.293a1 1 0 0 1 1.414 0l7 7A1 1 0 0 1 17 11h-1v6a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-6H3a1 1 0 0 1-.707-1.707l7-7Z"
+                        fill-rule="evenodd"></path>
+                </svg>
+            </div>
+            <div class="p-3 w-16 h-16 bg-gray-200 rounded border-2 border-gray-400 text-gray-700 shadow-md">
+                <!-- Account Icon -->
+                <svg data-slot="icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM3.465 14.493a1.23 1.23 0 0 0 .41 1.412A9.957 9.957 0 0 0 10 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 0 0-13.074.003Z">
+                    </path>
+                </svg>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
